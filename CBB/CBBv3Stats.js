@@ -186,6 +186,13 @@ class CBBv3StatsClient extends BaseClient {
     }
 
     /// <summary>
+    /// Get Stadiums
+    /// </summary>
+    getStadiumsPromise(){
+        return this.GetPromise('/v3/cbb/stats/{format}/Stadiums');
+    }
+
+    /// <summary>
     /// Get Team Game Stats by Date
     /// </summary>
     /// <param name="date">The date of the game(s). Examples: <code>2018-FEB-27</code>, <code>2017-DEC-01</code>.</param>
